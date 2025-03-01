@@ -10,7 +10,7 @@
           class="badge bg-primary me-2">
             {{ server.status | uppercase }}
           </span>
-          <strong>{{ server.name }}</strong> | {{ server.instanceType }} | {{ server.started }}
+          <strong>{{ server.name }}</strong> | {{ server.instanceType }} | {{ server.started | date: 'fullDate' :'medium' }}
         </li>
       </ul>
     </div>
